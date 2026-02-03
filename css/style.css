@@ -217,3 +217,114 @@ body {
     text-align: center;
     color: #ffff;
 }
+.sellers{
+    border-radius: 8px;
+    width: 1800px;
+    height: 550px;
+    background: #ffffff;
+    margin-left: 50px;
+    margin-top: 120px;
+}
+.sellers-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sellers-txt>h1{
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 150%;
+    color: #252525;
+    margin-bottom: 16px;
+    margin-top: 145px;
+}
+.sellers-txt>p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #8B959E;
+    margin-bottom: 60px;
+}
+.sellers-btn{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 171%;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 178px;
+    height: 56px;
+    background: #009661;
+    border: none;
+}
+.sellers-img{
+    border: 8px solid #8B959E ;
+    width: 699px;
+    height: 310px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+    
+}
+.sellers-compani{
+    display: flex;
+    align-items: center;
+}
+.img-1{
+    margin-top: 67px;
+    margin-left: 64px;
+}
+.img-2{
+    margin-top: 60px;
+    margin-left: 96px;
+}
+.img-3{
+    margin-top: 64px;
+    margin-left: 70px;
+}
+.img-4{
+    margin-top: 54px;
+    margin-left: 125px;
+}
+.card-link{
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.card-link>p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    color: #8B959E;
+    margin-right: 20px;
+}
+.card-link>p>span{
+    margin-left: 24px;
+}
+.last-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    color: #252525;
+}
+.card-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+}
+.avto-name{
+    display: flex;
+    align-items: center;
+}
+.avto-name>h1{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #252525;
+}
