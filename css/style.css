@@ -7,8 +7,6 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #F9F9F9;
 }
-
-
 .container{
     max-width: 1216px;
     margin: auto;
@@ -30,7 +28,17 @@ body {
     color: #009661;
     margin-right: 40px;
 }
+.heade-seller>h1{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 80%;
+    color: #252525;
+    margin-right: 40px;
+}
 .heade{
+    display: flex;
+}
+.heade-seller{
     display: flex;
 }
 .nav{
@@ -70,6 +78,21 @@ body {
     height: 56px;
     background: rgba(70, 137, 102, 0.06);
 }
+.new-score-seller{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 171%;
+    text-transform: uppercase;
+    text-align: right;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 193px;
+    height: 56px;
+    background: #009661;
+}-
 .top-card{
     width: 289px;
     height: 362px;
@@ -293,6 +316,13 @@ body {
     margin-top: 32px;
     margin-bottom: 32px;
 }
+.card-txt{
+    border-radius: 8px;
+    width: 495px;
+    height: 315px;
+    background: #ffffff;
+    margin-left: 20px;
+}
 .card-link>p{
     font-weight: 500;
     font-size: 14px;
@@ -313,6 +343,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 20px;
 }
 .card{
     display: flex;
@@ -321,10 +352,172 @@ body {
 .avto-name{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 .avto-name>h1{
     font-weight: 500;
     font-size: 24px;
     line-height: 150%;
     color: #252525;
+    margin-top: 16px;
+}
+.card-txt>p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #8B959E;
+    display: flex;
+    margin-left: 24px;
+    margin-top: 8px;
+}
+.avto-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.info{
+    margin-top: 49px;
+}
+.info>h2{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    color: #8B959E;
+}
+.info>p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #252525;
+}
+.card-txt>span{
+    width: 447px;
+    height: 1px;
+    background: #e8e9e8;
+}
+.card-txt>h2{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    color: #009661;
+    margin-top: 49px;
+    margin-left: 24px;
+}
+.card-price{
+    width: 495px;
+    height: 104px;
+    background: #ffffff;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-price>h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    color: #009661;
+}
+.card-btn{
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 221px;
+    height: 56px;
+    background: #009661;
+    font-weight: 700;
+    border: none;
+    font-size: 13px;
+    line-height: 171%;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.review-cont>h1{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #252525;
+    margin-top: 80px;
+    margin-bottom: 32px;
+}
+.category-a{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    width: 701px;
+    height: 56px;
+    background: #e4e5e7 ;
+}
+.category-a>h2{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #8B959E;
+    margin-left: 24px;
+}
+.category-a>p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #252525;
+    position: absolute;
+    margin-left: 309px;
+}
+.category-b{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    width: 701px;
+    height: 56px;
+}
+.category-b>h2{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #8B959E;
+    margin-left: 24px;
+}
+.category-b>p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #252525;
+    position: absolute;
+    margin-left: 309px;
+}
+.description-cont>h1{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #252525;
+    margin-top: 80px;
+}
+.description-cont>h2{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #252525;
+    margin-top: 32px;
+}.description-cont>h3{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    color: #009661;
+    margin-top: 32px;
+}
+.description-cont>p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    color: #868686;
+    margin-top: 8px;
+    max-width: 690px;
+}
+.similar-cont>h1{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #252525;
+    margin-top: 202px;
+    margin-bottom: 40px;
 }
