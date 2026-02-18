@@ -309,10 +309,13 @@ body {
     margin-top: 54px;
     margin-left: 125px;
 }
+.card-link>p>span{
+    margin-left: 20px;
+}
 .card-link{
     display: flex;
     align-items: center;
-    margin-top: 32px;
+    padding-top: 32px;
     margin-bottom: 32px;
 }
 .card-link-2{
@@ -750,4 +753,15 @@ input[type="checkbox"]{
     text-transform: uppercase;
     color: #009661;
     margin-left: 16px;
+}
+.favourites{
+    height: 228px;
+    background: #FFFFFF;
+    margin-top: 3px;
+}
+.favourites-cont>h2{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 150%;
+    color: #252525;
 }
