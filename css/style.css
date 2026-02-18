@@ -765,3 +765,30 @@ input[type="checkbox"]{
     line-height: 150%;
     color: #252525;
 }
+.search-cont{
+    border-radius: 8px;
+    width: 1216px;
+    height: 72px;
+    border: none;
+    background: #FFFFFF;
+    margin-top: 40px;
+}
+.search-input{
+    border-radius: 8px;
+    width: 1216px;
+    height: 72px;
+    border: none;
+    background: #FFFFFF;
+}
+.search-input::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #8B959E;
+    padding-left: 64px;
+}
+.lupa{
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 24px;
+}
