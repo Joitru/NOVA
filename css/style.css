@@ -792,3 +792,120 @@ input[type="checkbox"]{
     margin-left: 32px;
     margin-top: 24px;
 }
+.card-alt{
+    border-radius: 8px;
+    width: 392px;
+    height: 464px;
+    background: #FFFFFF;
+}
+.card-alt>img{
+    border-radius: 4px;
+    width: 360px;
+    height: 204px;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+.card-alt>p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #8B959E;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+.card-alt>h2{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #252525;
+    margin-left: 16px;
+    margin-top: 8px;
+}
+.stat{
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+.stat>p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #252525;
+    border-radius: 4px;
+    padding: 2px 8px;
+    height: 28px;
+    background: rgba(139, 149, 158, 0.05);
+    margin-right: 10px;
+}
+.price-alt{
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    margin-top: 41px;
+}
+.adres-alt{
+    display: flex;
+    align-items: center;
+    margin-right: 85px;
+}
+.adres-alt>p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #8B959E;
+    margin-left: 8px;
+}
+.card-alts{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-widkfhalf{
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 177px;
+    border: none;
+    height: 56px;
+    background: #009661;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 171%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 48px;
+}
+.linl-alt{
+    margin-right: 60px;
+}
+.favourites-link{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.linl-alt>p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    color: #252525;
+}
+.linl-alt>p>span{
+    margin-left: 5px;
+    margin-right: 8px;
+}
+.line-alt{
+    width: 81px;
+    height: 3px;
+    background: #009661;
+    position: absolute;
+    margin-top: 13px;
+    left: 337px;
+}
+.linl-alts{
+    display: flex;
+    align-items: center;
+}
+.linl-alts>img{
+    margin-right: 8px;
+}
