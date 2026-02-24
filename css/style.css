@@ -15,6 +15,19 @@ body {
     background-color: #ffff;
     padding: 1px 0px 32px 0px;
 }
+.heade > a {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.heade > a h1 {
+    color: #009661;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 80%;
+    margin: 0;
+}
 .header{
     display: flex;
     align-items: center;
@@ -267,6 +280,7 @@ body {
     color: #8B959E;
     margin-bottom: 60px;
 }
+
 .sellers-btn{
     font-weight: 700;
     font-size: 13px;
@@ -288,6 +302,400 @@ body {
     align-items: center;
     margin-top: 120px;
     
+}
+/* Анимации для страницы входа (login.html) */
+
+/* Эффект для контейнера входа */
+.log-cont, .log-contt {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideInUp 0.5s ease-out;
+}
+
+.log-cont:hover, .log-contt:hover {
+    box-shadow: 0 20px 40px rgba(0, 150, 97, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Анимация появления для формы входа */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Эффект для полей ввода */
+.int input {
+    transition: all 0.3s ease;
+    border: 2px solid #E9E9E9;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.int input:hover {
+    border-color: #009661;
+    background-color: rgba(0, 150, 97, 0.02);
+}
+
+.int input:focus {
+    outline: none;
+    border-color: #009661;
+    box-shadow: 0 0 0 3px rgba(0, 150, 97, 0.1);
+    transform: scale(1.02);
+}
+
+/* Эффект для меток полей */
+.int p {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.int:hover p {
+    color: #009661;
+    transform: translateX(5px);
+}
+
+/* Анимация для ссылки регистрации */
+.dfghj span {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.dfghj span:hover {
+    color: #00b57a;
+    transform: scale(1.05);
+}
+
+.dfghj span::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #009661;
+    transition: width 0.3s ease;
+}
+
+.dfghj span:hover::after {
+    width: 100%;
+}
+
+/* Анимация для страницы сообщений (message.html) */
+
+/* Эффект для вкладок в личном кабинете */
+.linl-alt {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 0;
+}
+
+.linl-alt:hover {
+    transform: translateY(-2px);
+}
+
+.linl-alt p {
+    transition: color 0.3s ease;
+}
+
+.linl-alt:hover p {
+    color: #009661;
+}
+
+/* Эффект для вкладки с настройками */
+.linl-alts {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.linl-alts:hover {
+    transform: translateX(5px);
+}
+
+.linl-alts img {
+    transition: transform 0.3s ease;
+}
+
+.linl-alts:hover img {
+    transform: rotate(90deg);
+}
+
+/* Эффект для поля поиска в сообщениях */
+.search-cont {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.search-cont::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 150, 97, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.search-cont:hover::before {
+    left: 100%;
+}
+
+.search-input-2 {
+    transition: all 0.3s ease;
+    padding-left: 80px;
+    font-size: 16px;
+}
+
+.search-input-2:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 150, 97, 0.2);
+}
+
+.lupa-2 {
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.search-cont:hover .lupa-2 {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Общие анимации для всех страниц */
+
+/* Анимация для карточек в избранном */
+.card-alt {
+    transition: all 0.3s ease;
+    animation: fadeInScale 0.5s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.card-alt:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 150, 97, 0.2);
+}
+
+.card-alt::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.card-alt:hover::before {
+    left: 100%;
+}
+
+/* Эффект для изображений в карточках */
+.card-alt img {
+    transition: transform 0.5s ease;
+}
+
+.card-alt:hover img {
+    transform: scale(1.1);
+}
+
+/* Эффект для статистики на карточках */
+.stat p {
+    transition: all 0.3s ease;
+}
+
+.card-alt:hover .stat p {
+    background-color: rgba(0, 150, 97, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Анимация для цены */
+.price-alt {
+    transition: all 0.3s ease;
+}
+
+.card-alt:hover .price-alt {
+    transform: scale(1.05);
+}
+
+.price-alt h3 {
+    transition: color 0.3s ease;
+}
+
+.card-alt:hover .price-alt h3 {
+    color: #00b57a;
+}
+
+/* Эффект для кнопки в избранном */
+.btn-widkfhalf {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-widkfhalf::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn-widkfhalf:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* Анимация для блока продавцов */
+.sellers {
+    transition: all 0.3s ease;
+    animation: fadeInLeft 0.6s ease-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.sellers:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Эффект для логотипов продавцов */
+.sellers-img {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.sellers-img:hover {
+    border-color: #009661;
+    transform: scale(1.02);
+}
+
+.img-1, .img-2, .img-3, .img-4 {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.img-1:hover, .img-2:hover, .img-3:hover, .img-4:hover {
+    transform: scale(1.1) rotate(2deg);
+    filter: brightness(1.1);
+}
+
+/* Анимация для хлебных крошек на всех страницах */
+.card-link p, .card-link-2 p {
+    position: relative;
+    padding-right: 25px;
+}
+
+.card-link p span, .card-link-2 p span {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.card-link p:hover span, .card-link-2 p:hover span {
+    transform: translateX(5px);
+}
+
+/* Анимация для нижней линии футера */
+.footer-end {
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.footer-end:hover {
+    opacity: 0.2;
+    border-color: #009661;
+}
+
+/* Эффект для текста в футере */
+.footer-end-txt {
+    transition: color 0.3s ease;
+}
+
+.footer-end:hover .footer-end-txt {
+    color: #009661;
+}
+
+/* Анимация для кнопки "Стать продавцем" */
+.new-score {
+    position: relative;
+    overflow: hidden;
+}
+
+.new-score::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 150, 97, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.new-score:hover::before {
+    left: 100%;
+}
+
+/* Анимация для профиля */
+.profile {
+    position: relative;
+    overflow: hidden;
+}
+
+.profile::after {
+    content: '→';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: right 0.3s ease;
+    opacity: 0;
+}
+
+.profile:hover::after {
+    right: 20px;
+    opacity: 1;
+}
+
+/* Анимация загрузки для всех карточек */
+.top-card, .card-alt, .card, .sellers, .log-cont, .log-contt {
+    animation: fadeInUp 0.6s ease-out;
 }
 .sellers-compani{
     display: flex;
@@ -484,6 +892,251 @@ body {
     font-size: 30px;
     line-height: 120%;
     color: #009661;
+}
+/* Эффекты при наведении на карточки товаров */
+.top-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 150, 97, 0.15);
+}
+
+/* Эффект для изображений в карточках */
+.top-card img {
+    transition: transform 0.5s ease;
+}
+
+.top-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Анимация для кнопок */
+.profile, .new-score, .new-score-seller, .card-btn, .top-btn, .sellers-btn, .registration-btn, .log-btn, .btn-widkfhalf {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile:hover {
+    background-color: rgba(0, 150, 97, 0.05);
+    transform: translateY(-2px);
+}
+
+.new-score:hover {
+    background-color: rgba(70, 137, 102, 0.15);
+    transform: translateY(-2px);
+}
+
+.new-score-seller:hover {
+    background-color: #00b57a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 150, 97, 0.3);
+}
+
+.card-btn:hover, .top-btn:hover, .sellers-btn:hover, .registration-btn:hover, .log-btn:hover, .btn-widkfhalf:hover {
+    background-color: #00b57a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 150, 97, 0.3);
+}
+
+/* Эффект пульсации для кнопок при нажатии */
+.profile:active, .new-score:active, .new-score-seller:active, .card-btn:active, .top-btn:active, .sellers-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 150, 97, 0.2);
+}
+
+/* Анимация для навигационных ссылок */
+.nav-link {
+    transition: color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #009661;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #009661;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Эффект для изображений в галерее товара */
+.card-img img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card-img img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-imgs img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.card-imgs img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Анимация для категорий в обзоре */
+.category-a, .category-b {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: default;
+}
+
+.category-a:hover, .category-b:hover {
+    background-color: #d1d5db;
+    transform: translateX(5px);
+}
+
+/* Эффект для сердечка (избранное) */
+.avto-name img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.avto-name img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* Анимация для ссылок в футере */
+.nav-footer p {
+    transition: color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-footer p:hover {
+    color: #009661;
+}
+
+.nav-footer p::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #009661;
+    transition: width 0.3s ease;
+}
+
+.nav-footer p:hover::after {
+    width: 100%;
+}
+
+/* Эффект для иконок соцсетей */
+.footer-icon img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-icon img:hover {
+    transform: translateY(-5px) scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Анимация для кнопки "Показать больше" */
+.description-cont h3 {
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.description-cont h3:hover {
+    color: #00b57a;
+    transform: translateX(5px);
+}
+
+/* Эффект для хлебных крошек */
+.card-link p, .card-link-2 p {
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.card-link p:hover, .card-link-2 p:hover {
+    color: #009661;
+}
+
+/* Анимация для поля поиска */
+.search-input {
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 150, 97, 0.2);
+    border-color: #009661;
+}
+
+/* Эффект для чекбокса */
+input[type="checkbox"] {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+    transform: scale(1.1);
+}
+
+/* Анимация загрузки для карточек */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.top-card, .card-alt, .card {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Эффект для кнопок редактирования/удаления */
+.card-2-btn, .card-2-btn-2 {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card-2-btn:hover {
+    background-color: rgba(108, 159, 131, 0.2);
+    transform: translateY(-2px);
+}
+
+.card-2-btn-2:hover {
+    background-color: rgba(235, 87, 87, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Анимация для цены */
+.card-price h3 {
+    transition: transform 0.3s ease;
+}
+
+.card-price:hover h3 {
+    transform: scale(1.05);
+    color: #00b57a;
 }
 .card-btn{
     border-radius: 4px;
@@ -899,8 +1552,16 @@ input[type="checkbox"]{
     height: 3px;
     background: #009661;
     position: absolute;
-    margin-top: 13px;
-    left: 337px;
+    margin-top: 9px;
+    left: -5px;
+}
+.line-alt-2{
+    width: 81px;
+    height: 3px;
+    background: #009661;
+    position: absolute;
+    margin-top: 9px;
+    left: 33px;
 }
 .linl-alts{
     display: flex;
@@ -908,4 +1569,139 @@ input[type="checkbox"]{
 }
 .linl-alts>img{
     margin-right: 8px;
+}
+.lupa-2{
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+.search-input-2{
+    border-radius: 8px;
+    width: 1216px;
+    height: 72px;
+    border: none;
+    background: #FFFFFF;
+}
+.search-input-2::placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    color: #009661;
+    padding-left: 48px;
+}
+/* Стили для блока фильтрации */
+.filter-block {
+    background-color: #ffffff;
+    padding: 32px 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.filter-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.filter-header h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #252525;
+    margin: 0;
+}
+
+.filter-tags {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.filter-tags span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    color: #8B959E;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.filter-tags span:hover {
+    color: #009661;
+}
+
+.filter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px 32px;
+}
+
+.filter-item p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #8B959E;
+    margin: 0 0 4px 0;
+}
+
+.filter-item p span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #252525;
+    display: inline-block;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.filter-item p span:hover {
+    color: #009661;
+}
+/* Стили для ссылки профиля */
+a.profile-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.profile-link button {
+    cursor: pointer;
+}
+
+/* Альтернативный вариант: кнопка как ссылка */
+a.profile {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 56px;
+    /* Остальные стили наследуются от .profile */
+}
+/* Адаптивность для планшетов */
+@media (max-width: 1024px) {
+    .filter-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .filter-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .filter-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-grid {
+        grid-template-columns: 1fr;
+    }
 }
